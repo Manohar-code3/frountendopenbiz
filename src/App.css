@@ -1,0 +1,153 @@
+body.light {
+  background: #f4faff;
+  color: #191926;
+}
+body.dark {
+  background: #181e2a;
+  color: #f0f0f0;
+}
+.udyam-card {
+  background: #fff;
+  border-radius: 11px;
+  margin: 38px auto 30px auto;
+  max-width: 700px;
+  box-shadow: 0 7px 22px 4px rgba(70,110,180,0.08);
+  padding: 30px 40px 32px 40px;
+}
+body.dark .udyam-card {
+  background: #232d43;
+  color: #eee;
+}
+.udyam-header {
+  background: #1976d2;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px 19px;
+  border-radius: 8px 8px 0 0;
+  margin: -31px -40px 28px -40px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.udyam-row { display: flex; gap: 28px; }
+@media (max-width: 700px) {
+  .udyam-row { flex-direction: column; gap: 10px; }
+  .udyam-card { padding: 15px 8px; max-width: 99vw; }
+  .udyam-header { font-size: 18px; padding: 10px 8px; margin: -16px -8px 22px -8px;}
+}
+.udyam-col { flex: 1; }
+label, .udyam-col label { font-weight: 500; }
+input, select, button {
+  width: 100%;
+  padding: 9px;
+  margin-top: 5px;
+  background: #f3f7fd;
+  border: 1.2px solid #b8cbe7;
+  border-radius: 6px;
+  font-size: 16px;
+}
+body.dark input, body.dark select {
+  background: #121925;
+  color: #f3f3f3;
+  border-color: #355796;
+}
+.udyam-step-dot {
+  height: 13px; width: 13px; border-radius:50%;
+  display:inline-block; margin:0 10px;
+  background: #e3ebf5
+}
+button {
+  background: #1976d2; color: #fff;
+  font-weight: bold; font-size: 18px;
+  margin-top: 22px; border: none; border-radius: 6px;
+  padding: 12px 0; box-shadow: 0 2px 6px rgba(25,118,210,0.06);
+  cursor: pointer; transition: background 0.17s;
+}
+button:disabled { background: #8ec2f7; color: #f9fcff; }
+.udyam-info { margin: 16px 0 14px 13px; color: #444; font-size: 15px; }
+.udyam-info li { margin-bottom: 5px; line-height: 1.6;}
+.udyam-declaration-box {
+  border: 1.5px solid #b5cae0;
+  background: #f6fbff;
+  padding: 15px 17px 11px 17px;
+  border-radius: 8px;
+  margin: 20px auto 26px auto;
+  max-width: 690px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  box-shadow: 0 1px 6px rgba(50,90,200,0.04);
+}
+body.dark .udyam-declaration-box {
+  border-color: #294769;
+  background: #1d2639;
+  color: #eee;
+}
+.udyam-declaration-checkbox {
+  margin-top: 3px;
+  transform: scale(1.35);
+  accent-color: #1976d2;
+  min-width: 25px;
+}
+.udyam-declaration-text {
+  font-size: 14.7px;
+  line-height: 1.7;
+  margin-left:5px;
+  font-weight: 400;
+  word-break: break-word;
+}
+.error-box {
+  background: #fff3f3;
+  color: #be223c;
+  padding: 8px 13px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  border: 1px solid #f5d0d0;
+  font-size: 15px;
+}
+body.dark .error-box {
+  background: #2a1827; color: #ffa2b0; border-color: #472136;
+}
+::-webkit-input-placeholder { color: #8894aa !important; }
+::-moz-placeholder { color: #8894aa !important; }
+:-ms-input-placeholder { color: #8894aa !important; }
+::placeholder { color: #8894aa !important; }
+
+.udyam-headerbar {
+  width: 100%;
+  background: #1976d2;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 36px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 15;
+}
+.udyam-logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.udyam-about-link { color: #fff !important; }
+.udyam-about-link:hover { color: #ffe878 !important; }
+
+
+@media (max-width: 700px) {
+  .udyam-headerbar { padding: 12px 10px; }
+  .udyam-logo { font-size: 1.22rem; }
+}
+
+.udyam-footer {
+  background: #1976d2;
+  color: #fff;
+  padding: 18px 0 14px 0;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 58px;
+  border-radius: 0 0 12px 12px;
+  letter-spacing: 1px;
+}
+body.dark .udyam-footer { background: #142045; color: #fff4cc; }
