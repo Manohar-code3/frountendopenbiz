@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "frontendopenbiz",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -45,7 +45,9 @@
   },
   "jest": {
     "transformIgnorePatterns": [
-      "/node_modules/(?!axios|other-es-module-you-use)/"
+    
+      "/node_modules/(?!axios)/"
+
     ]
   }
 }
